@@ -4,9 +4,6 @@
 <img src="https://archlinux.org/static/logos/archlinux-logo-light-90dpi.png" alt="Arch Linux Logo" width="500"/>
 </p>
 
-> [!NOTE]
-> ONLY UEFI
-
 - [Network Setup](#for-wifi)
 - [Disk Partitioning](#-create-partitions)
 - [Base Installation](#install-linux-packages-through-pacstrap)
@@ -234,8 +231,13 @@ systemctl enable NetworkManager
 
 
 #### Installing Grub Boot-Loader to System
+##### For Legacy BIOS
 ```
 grub-install /dev/sda
+```
+##### For UEFI BIOS (Recommend)
+```
+grub-install --target=x86_x64-efi --efi-directory=/boot/efi --bootloader-id=ArchLinux
 ```
 
 
