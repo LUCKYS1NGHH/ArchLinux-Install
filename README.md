@@ -344,7 +344,7 @@ sudo pacman -S <desktop-environment> <display-manager>
 ### Bonus tools which will help
 - `curl`                  <-- Download files or fetch web data
 - `lsd`                   <-- Modern 'ls' command with icons and better formatting
-- `ranger`                <-- Terminal file manager with VI-style navigation
+- `yazi`                  <-- Fast terminal file manager with Vim-style navigation
 - `btop`                  <-- Resource monitor (CPU, RAM, Disk, Network)
 - `tldr`                  <-- Simplified man pages (shows practical examples)
 - `clamav`                <-- Scan files and folders for viruses
